@@ -1,0 +1,14 @@
+# PyTorch for the TabularTransformer base learners
+torch>=1.13.0
+
+# Data manipulation and inference arrays
+pandas>=1.3.0
+numpy>=1.21.0
+
+# Strictly pinned to match the serialized weight files version
+scikit-learn==1.6.1
+
+# Visualization and format handling
+matplotlib>=3.4.0
+seaborn>=0.11.0
+openpyxl>=3.0.0
