@@ -157,7 +157,7 @@ python inference.py
 
 PRISM uses a two-level stacking ensemble.
 
-**Level 1 — TabularTransformer base learners.** Each radiomic feature is treated as a token: a shared linear projection embeds each scalar value into a `d_model`-dimensional vector. A learnable `[CLS]` token is prepended and the sequence receives a learned positional embedding. The sequence passes through a Transformer encoder (GELU activation, `batch_first=True`). The `[CLS]` token output at the final layer is passed through a LayerNorm + linear head to produce a single logit for binary classification. Two independent 5-fold cross-validated ensembles are trained: one on the top 20% most stable features (ranked by ICC across folds), one on the top 40%.
+**Level 1 — TabularTransformer base learners.** Each radiomic feature is treated as a token: a shared linear projection embeds each scalar value into a `d_model`-dimensional vector. A learnable `[CLS]` token is prepended and the sequence receives a learned positional embedding. The sequence passes through a Transformer encoder (GELU activation, `batch_first=True`). The `[CLS]` token output at the final layer is passed through a LayerNorm + linear head to produce a single logit for binary classification. Two independent 5-fold cross-validated ensembles are trained: one on the top 20% most stable features (ranked by Frequency of selection a Ross folds), one on the top 40%.
 
 **Level 2 — Soft voting.** The 5-fold averaged probabilities from the 20% and 40% ensembles are averaged to produce the final `PRISM_Probability`.
 
