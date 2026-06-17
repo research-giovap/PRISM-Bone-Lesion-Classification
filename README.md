@@ -1,6 +1,6 @@
 # PRISM: PET/CT Radiomics Interpretable Self-attention Model
 
-PRISM is a multicenter self-attention transformer ensemble for distinguishing **Unspecific Bone Uptakes (UBUs)** from **Prostate Cancer (PCa) bone metastases** on [¹⁸F]PSMA-1007 PET/CT, using high-dimensional radiomics and clinical features extracted from lesion segmentations.
+PRISM is a multicenter self-attention transformer ensemble for distinguishing **Unspecific Bone Uptakes (UBUs)** from **Prostate Cancer (PCa) bone metastases** on [¹⁸F]PSMA-1007 PET/CT, using high-dimensional radiomics extracted from lesion segmentations.
 
 ---
 
